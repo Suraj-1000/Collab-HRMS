@@ -14,7 +14,7 @@
         </div>
 
         <nav>
-            <a href="adminDashboard.html" id="home">Home</a>
+            <a href="adminDashboard.php" id="home">Home</a>
         </nav>
 
         <div class="userlogo">
@@ -27,12 +27,22 @@
 
     <section>
         <div class="sideNavbar">
-            <button id="dashboard">Dashboard</button>
-            <button id="employeeDataManagement">Employee Data Management</button>
+            <button id="dashboard" onclick="dashboard()">Dashboard</button>
+            <button id="employeeDataManagement" onclick="edm()">Employee Data Management</button>
             <button id="payroll">Payroll Management</button>
             <button id="Benefits">Benefits Management</button>
             <button id="performanceEvaluation">performance Evaluation</button>
             <button id="logout">Logout</button>
+
+            <script>
+                function dashboard(){
+                    location = 'adminDashboard.php';
+                }
+
+                function edm(){
+                    location = 'adminEmployeeDataManagement.php';
+                }
+            </script>
         </div>    
 
         <div class="content1">
@@ -43,12 +53,12 @@
             <p id="employees">400</p>
 
             <div class="girls">
-                <p>Girls</p>
+                <p>Female</p>
                 <p>150</p>
             </div>
 
             <div class="boys">
-                <p>Boys</p>
+                <p>Male</p>
                 <p>250</p>
             </div>
         </div>
